@@ -1,0 +1,7 @@
+<form name="commentfrm" [formGroup]="commentForm">
+  <mat-form-field class="width_80">
+    <textarea matInput placeholder="Leave a comment" formControlName="comment"></textarea>
+  </mat-form-field>
+  <br/>
+  <button type="button" mat-button mat-raised-button color="primary" (click)="addComment()">Add Comment</button>
+</form>

@@ -1,0 +1,22 @@
+<article>
+  <mat-card class="example-card">
+    <!-- <div routerLink="/details/{{_article.id}}"> -->
+    <div >
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{_article.title}}</mat-card-title>
+        <mat-card-subtitle>{{_article.pubDate}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{_article.thumbnail.url}}" alt="no preview" *ngIf="_article.thumbnail">
+      <mat-card-content>
+        <p *ngFor="let text of _article.description">
+          <span>{{text|limitchar:80}}</span>
+        </p>
+      </mat-card-content>
+    </div>
+    <mat-card-actions>
+      <button mat-button (click)="openTab(_article.link)">READ MORE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</article>

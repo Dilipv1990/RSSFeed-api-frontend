@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.content {
+    margin-top: 48px;
+}
+
+.dark-backdrop {
+    background: #000;
+    opacity: 0.85 !important;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+.menu-dialog-panel{
+	background: antiquewhite;
+	float: left;
+	height: 100%;
+	width: 200px;
+	padding: 16px;
+}

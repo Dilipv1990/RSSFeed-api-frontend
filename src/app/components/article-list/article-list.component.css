@@ -1,0 +1,13 @@
+.previews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+app-article-preview {
+  flex: auto;
+  margin: 16px;
+  max-width: 340px;
+}
+

@@ -1,0 +1,16 @@
+.content{
+	flex-direction: column;
+	background: white;
+	padding: 64px;
+	text-align: center;
+	display: inline-block;
+}
+.flex-item{
+}
+.google-btn{
+	display: inline-block;
+	text-align: center;
+}
+i{
+	font-size: 26px
+}

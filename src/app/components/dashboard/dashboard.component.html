@@ -1,0 +1,6 @@
+<div [ngClass]="{'spinner-back':progress}">
+	<app-nav (shareData)="updateData($event)" class="left"></app-nav>
+	<app-article-list [articles]="articles"></app-article-list>
+</div>
+<mat-spinner *ngIf="progress">
+</mat-spinner>
